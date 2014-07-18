@@ -10,15 +10,13 @@ button{margin: 20px 0 0 95px;}
 .pc{position:relative;margin:0 auto;text-align:left;width:300px;height:200px;padding-left: 85px;}	
  h1{margin:0;width:100%;text-align:center;border-bottom: 1px solid #ccc;padding:20px 0 20px 0;background: #edf4ed;color: #072;}	
 </style>
- <script type="text/javascript">
+<script type="text/javascript">
 function add(){
 var fbl=screen.width + "*" + screen.height;
 document.getElementById("fbl").value=fbl;
 }
- </script>
-
+</script>
 </head>
-
 <body>
 <form action="ht/user_insert.php" method="get">  
             <h1>交互设计实验</h1>
@@ -50,8 +48,7 @@ document.getElementById("fbl").value=fbl;
                     <input type="radio" name="study" value="0" />文科
                     </p>
                     <button onClick="add()" >提交</button> <input id="fbl" name="fbl" type="hidden" value="" />
-              </div>
-                    
+              </div>     
 </form>
 </body>
 </html>

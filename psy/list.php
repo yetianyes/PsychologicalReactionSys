@@ -4,7 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>无标题文档</title>
 </head>
-
 <body>
 <a href="index.php">说明</a>
 <a href="start.php">注册</a>

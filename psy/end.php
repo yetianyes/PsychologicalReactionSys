@@ -65,17 +65,14 @@ $userid_array=explode('|',$userid);
 				$s=($b0[$i1]+$b1[$i1]+$b2[$i1]+$b3[$i1]+$b4[$i1])/$dc_lv;
 				$ms=($b0[$i2]+$b1[$i2]+$b2[$i2]+$b3[$i2]+$b4[$i2])/$dc_lv;
 				
-				if(is_float($s))
-				{
+				if(is_float($s)){
 				$s_array=explode(".",$s);
                       if(strlen($s_array[1])<2){$s_array[1]=$s_array[1]*10;}
-					  if( ($s_array[1]+$ms)>=100)
-					  {
+					  if( ($s_array[1]+$ms)>=100){
 						  $s_array_miao=($s_array[0]+1);
 						  $s_array_hm=round(($s_array[1]+$ms)-100);
 					  }
-					  else
-					  {
+					  else{
 						  $s_array_miao=$s_array[0];
 					      $s_array_hm=round(($s_array[1]+$ms));
 					  }
@@ -84,8 +81,7 @@ $userid_array=explode('|',$userid);
 					  $s_array_miao=$s;
 					  $s_array_hm=round($ms);
 				}
-                if(strlen($s_array_hm)<2)
-				{
+                if(strlen($s_array_hm)<2){
 					  $s_array_hm='0'.round($ms);
 				}
 				$go=$min.':'.$s_array_miao.'.'.$s_array_hm;
@@ -93,8 +89,9 @@ $userid_array=explode('|',$userid);
 				$row = mysql_fetch_array($result);
 							if($row[0]<=4){
 							$result1 = mysql_query("INSERT INTO `evabioyetian`.`average` (`pjid`, `av_time`, `type`,`userid`) VALUES (NULL, '$go','$ia','$user_id');");
+							}else{ 
+								echo '';
 							}
-							else{ echo '';}
 							
 				echo $min.'·Ö&nbsp;'.$s_array_miao.'.'.$s_array_hm.'Ãë';
 		        }

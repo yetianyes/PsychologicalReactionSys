@@ -6,8 +6,6 @@
 <title>无标题文档</title>
 </head>
 <body>
-
-
 <?php
 $x1=$_GET['x1']; $x2=$_GET['x2'];$n1=$_GET['n1'];$n2=$_GET['n2'];$s1=$_GET['pjc1']*$_GET['pjc1'];$s2=$_GET['pjc2']*$_GET['pjc2'];
 function tf($x1,$x2,$n1,$n2,$s1,$s2){$t=($x1-$x2)/sqrt((($n1*$s1*$s1+$n2*$s2*$s2)/($n1+$n2-2)) * (1/$n1+1/$n2) );echo number_format($t,3, '.', '');}
@@ -27,8 +25,5 @@ if(!empty($x1)){
 <button>提交</button>
 </form>
 <?php }?>
-
-
-
 </body>
 </html>

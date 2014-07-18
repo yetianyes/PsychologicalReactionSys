@@ -6,8 +6,6 @@
 <title>无标题文档</title>
 </head>
 <body>
-
-
 <?php
 $x1=$_GET['x1']; $x2=$_GET['x2'];
 function tf($x1,$x2){$f=($x1*$x1)/($x2*$x2);echo number_format($f,3, '.', '');}
@@ -20,12 +18,8 @@ if(!empty($x1)){
 <form action="f.php" method="get">
 标准差大:<input type="text"  name="x1" value="">
 标准差小:<input type="text"  name="x2" value="">
-
 <button>提交</button>
 </form>
 <?php }?>
-
-
-
 </body>
 </html>
